@@ -1,0 +1,102 @@
+﻿Connecting to MongoDB... ncut.x1fh68s.mongodb.net/?appName=ncut
+Clearing existing products and collections...
+Inserting Collections...
+node : Error seeding database: 
+MongoBulkWriteError: E11000 duplicate 
+key error collection: 
+test.collections index: slug_1 dup 
+key: { slug: null }
+At line:1 char:1
++ node scripts/seed.js > 
+seed_output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo          : NotSpec 
+   ified: (Error seeding d... { slug  
+  : null }:String) [], RemoteExcept   
+ ion
+    + FullyQualifiedErrorId : NativeC 
+   ommandError
+ 
+    at 
+OrderedBulkOperation.handleWriteError 
+(C:\Users\Christoph Leon\Dropbox\My 
+PC (LAPTOP-P8HKGMEB)\Downloads\ncut\se
+rver\node_modules\mongodb\lib\bulk\com
+mon.js:804:19)
+    at executeCommands 
+(C:\Users\Christoph Leon\Dropbox\My 
+PC (LAPTOP-P8HKGMEB)\Downloads\ncut\se
+rver\node_modules\mongodb\lib\bulk\com
+mon.js:346:23)
+    at 
+process.processTicksAndRejections (nod
+e:internal/process/task_queues:105:5)
+    at async C:\Users\Christoph 
+Leon\Dropbox\My PC (LAPTOP-P8HKGMEB)\D
+ownloads\ncut\server\node_modules\mong
+odb\lib\bulk\common.js:790:24
+    at async MongoClient.withSession 
+(C:\Users\Christoph Leon\Dropbox\My 
+PC (LAPTOP-P8HKGMEB)\Downloads\ncut\se
+rver\node_modules\mongodb\lib\mongo_cl
+ient.js:477:20)
+    at async 
+OrderedBulkOperation.execute 
+(C:\Users\Christoph Leon\Dropbox\My 
+PC (LAPTOP-P8HKGMEB)\Downloads\ncut\se
+rver\node_modules\mongodb\lib\bulk\com
+mon.js:789:20)
+    at async Collection.bulkWrite 
+(C:\Users\Christoph Leon\Dropbox\My 
+PC (LAPTOP-P8HKGMEB)\Downloads\ncut\se
+rver\node_modules\mongodb\lib\collecti
+on.js:224:16)
+    at async Collection.insertMany 
+(C:\Users\Christoph Leon\Dropbox\My 
+PC (LAPTOP-P8HKGMEB)\Downloads\ncut\se
+rver\node_modules\mongodb\lib\collecti
+on.js:171:25) {
+  errorLabelSet: Set(0) {},
+  errorResponse: {
+    message: 'E11000 duplicate key 
+error collection: test.collections 
+index: slug_1 dup key: { slug: null 
+}',
+    code: 11000,
+    writeErrors: [ [Object] ]
+  },
+  code: 11000,
+  writeErrors: [ { err: [Object], 
+index: 1 } ],
+  result: BulkWriteResult {
+    insertedCount: 1,
+    matchedCount: 0,
+    modifiedCount: 0,
+    deletedCount: 0,
+    upsertedCount: 0,
+    upsertedIds: {},
+    insertedIds: { '0': new 
+ObjectId('69ccced397c0a081c36ee5b7') }
+  },
+  insertedDocs: [
+    {
+      title: 'Signature Collection',
+      handle: 'signature-collection',
+      description: 'Experience 
+premium responsive web design 
+translating high-end fashion 
+natively.',
+      image: 'https://picsum.photos/12
+00/600?random=100',
+      productIds: [],
+      _id: new 
+ObjectId('69ccced397c0a081c36ee5b7'),
+      __v: 0,
+      createdAt: 
+2026-04-01T07:52:51.291Z,
+      updatedAt: 
+2026-04-01T07:52:51.291Z
+    }
+  ]
+}

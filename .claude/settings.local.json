@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"/c/Users/Christoph Leon/Dropbox/My PC \\(LAPTOP-P8HKGMEB\\)/Downloads/ncut/\")",
+      "Bash(find:*)",
+      "Bash(ls -la \"/c/Users/Christoph Leon/Dropbox/My PC \\(LAPTOP-P8HKGMEB\\)/Downloads/ncut\")",
+      "Bash(ls:*)",
+      "Bash(head:*)",
+      "Bash(wc:*)",
+      "Bash(node -e ':*)"
+    ]
+  }
+}
