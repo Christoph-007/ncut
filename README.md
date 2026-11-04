@@ -1,8 +1,8 @@
 # ncut
 
 A full-stack e-commerce store. The UI is a React port of the Horizon Shopify
-Liquid theme (the original Liquid files stay in the repo as the design
-reference only, with no Shopify dependency at runtime), backed by a Node.js /
+Liquid theme (the original Liquid files are kept in
+`shopify-theme-reference/` as the design reference only, with no Shopify dependency at runtime), backed by a Node.js /
 Express / MongoDB API.
 
 ## Features
@@ -23,7 +23,7 @@ Express / MongoDB API.
 ```
 client/   React (Vite) frontend: pages, components, layouts, context, api
 server/   Express API: routes, controllers, models, middleware, scripts/seed.js
-blocks/ sections/ snippets/ templates/ ...   original Shopify theme (design reference)
+shopify-theme-reference/   original Horizon Shopify theme (Liquid), kept as the design reference only
 ```
 
 ## Running locally
@@ -38,6 +38,11 @@ npm run dev                           # client (Vite) + API (http://localhost:50
 ```
 
 Never commit `server/.env`; it is git-ignored.
+
+## Known limitations
+
+- The client's section-rendering helper calls `/api/sections/:id`, which the API does not implement yet.
+- Payments are not integrated; the orders API stores orders only.
 
 ## License
 

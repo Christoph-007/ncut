@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
-  }
+  },
+  "description": "Full-stack e-commerce store: React (Vite) client and Node.js/Express/MongoDB API, ported from the Horizon Shopify theme.",
+  "author": "Christoph Leon",
+  "license": "MIT"
 }

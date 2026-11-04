@@ -1,4 +1,4 @@
-21`const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
 const variantSchema = new mongoose.Schema({
   title: { type: String, default: 'Default' },

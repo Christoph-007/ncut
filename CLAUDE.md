@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+> Note: the original Shopify Liquid theme now lives in `shopify-theme-reference/`. Paths such as `snippets/`, `blocks/`, `assets/` and `layout/` below are relative to that folder.
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Goal

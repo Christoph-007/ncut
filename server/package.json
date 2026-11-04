@@ -16,10 +16,12 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.3",
-    "ncut-ecommerce": "file:..",
     "slugify": "^1.6.6"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
-  }
+  },
+  "description": "ncut REST API (Express + MongoDB)",
+  "author": "Christoph Leon",
+  "license": "MIT"
 }
